@@ -1,10 +1,10 @@
 # L3 Dumper
 
-Script to dump L3 CDM from any rooted Android phone.
+Script to dump L3 CDM from any rooted Android device.
 
 ## Things to remember
 
-Does not work on Android 11+. On lower Android version you need to check your device Widevine Security Level (to check use application [DRM Info](https://play.google.com/store/apps/details?id=com.androidfung.drminfo)). Make sure Security Level is L3. If it's L1, you need to install a Magisk module called [liboemcrypto-disabler](https://github.com/umylive/liboemcrypto-disabler).
+Does not work on Android 11+. On other Android versions you need to check your device Widevine Security Level (to check use application [DRM Info](https://play.google.com/store/apps/details?id=com.androidfung.drminfo)). Make sure Security Level is L3. If it's L1, you need to install a Magisk module called [liboemcrypto-disabler](https://github.com/umylive/liboemcrypto-disabler).
 
 ## Usage
 
