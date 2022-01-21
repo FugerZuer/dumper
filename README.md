@@ -1,6 +1,10 @@
-# Dumper
+# L3 Dumper
 
-Dumper is a Frida script to dump L3 CDMs from any Android device. Root needed.
+Script to dump L3 CDM from any rooted Android phone.
+
+## Things to remember
+
+Does not work on Android 11+. On lower Android version you need to check your device Widevine Security Level (to check use application ["DRM Info"](https://play.google.com/store/apps/details?id=com.androidfung.drminfo)). Make sure Security Level is L3. If it's L1, you need to install a Magisk module called [liboemcrypto-disabler](https://github.com/umylive/liboemcrypto-disabler).
 
 ## Usage
 
@@ -12,14 +16,11 @@ Dumper is a Frida script to dump L3 CDMs from any Android device. Root needed.
 * Enable USB debugging on your Android device and connect it to your computer.
 * After connecting verify your device is connected:
 `adb devices`
-* Execute dump_keys.py:
+* Execute the script:
 `python3 dump_keys.py`
 
-## Temporary disabling L1 to use L3 instead
-A few phone brands let us use the L1 keybox even after unlocking the bootloader (like Xiaomi). In this case, installation of a Magisk module called [liboemcrypto-disabler](https://github.com/umylive/liboemcrypto-disabler) is necessary.
-
-## Known issues
-It seems like Google made some changes in their OEMCrypto library and it broke the script. Further investigation is needed to make it work on Android 11+, feel free to open PRs.
+After successful run you will have a new folder `key_dumps` with needed keys inside.
 
 ## Credits
+
 Thanks to the original author of the code.
