@@ -15,10 +15,10 @@ logging.basicConfig(
 device = frida.get_usb_device()
 scanner = Scan(device.name)
 logging.info(f'Connected to {device.name}')
-logging.info('scanning all processes for the following libraries')
 choice = input("Do you want to launch DRM content on Chrome (y/n)? ")
 if choice.lower() == "y":
     os.system('adb shell am start -n com.android.chrome/org.chromium.chrome.browser.ChromeTabbedActivity -d "https://bitmovin.com/demos/drm"')
+logging.info('Scanning all processes for the following libraries')
 for process in device.enumerate_processes():
     logging.debug(process)
     if 'drm' in process.name:
