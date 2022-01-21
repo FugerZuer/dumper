@@ -1,19 +1,19 @@
 # Dumper
 
-Dumper is a Frida script to dump L3 CDMs from any Android device.
-
-## Dependencies
-
-Use pip to install the dependencies:
-
-`pip3 install -r requirements.txt`
+Dumper is a Frida script to dump L3 CDMs from any Android device. Root needed.
 
 ## Usage
 
-* Enable USB debugging
-* Start frida-server on the device
-* Execute dump_keys.py
-* Start streaming some DRM-protected content
+* Download [ADB]https://developer.android.com/studio/releases/platform-tools) and have it ready to use.
+* Download and install Python 3.9.0.
+* Install required Python 3.9.0 dependencies:
+`pip3 install -r requirements.txt`
+* Download and install ["Frida Server"]https://play.google.com/store/apps/details?id=me.shingle.fridaserver) application from Google Play store and start the server.
+* Enable USB debugging on your Android device and connect it to your computer.
+* After connecting verify your device is connected:
+`adb devices`
+* Execute dump_keys.py:
+`python3 dump_keys.py`
 
 ## Temporary disabling L1 to use L3 instead
 A few phone brands let us use the L1 keybox even after unlocking the bootloader (like Xiaomi). In this case, installation of a Magisk module called [liboemcrypto-disabler](https://github.com/umylive/liboemcrypto-disabler) is necessary.
