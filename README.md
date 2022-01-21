@@ -8,14 +8,11 @@ Does not work on Android 11+. On other Android versions you need to check your d
 
 ## Usage
 
-* Download [ADB](https://developer.android.com/studio/releases/platform-tools) and have it ready to use.
 * Download and install Python 3.9.0.
 * Install required Python 3.9.0 dependencies:
 `pip3 install -r requirements.txt`
 * Download and install [Frida Server](https://play.google.com/store/apps/details?id=me.shingle.fridaserver) application from Google Play store and start the server.
 * Enable USB debugging on your Android device and connect it to your computer.
-* After connecting verify your device is connected:
-`adb devices`
 * Execute the script:
 `python3 dump_keys.py`
 
