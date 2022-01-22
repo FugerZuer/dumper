@@ -28,7 +28,8 @@ class Scan:
             'libwvdrm_L1.so',
             'libWVStreamControlAPI_L1.so',
             'libdrmwvmplugin.so',
-            'libwvm.so'
+            'libwvm.so',
+            'libwidevinecdm.so'
         ]
 
     def export_key(self, k):
