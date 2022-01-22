@@ -8,12 +8,12 @@ Does not work on Android 11+. On other Android versions you need to check your d
 
 ## Usage
 
-* Download and install Python 3.9.0.
-* Install required Python 3.9.0 dependencies:
+* Download and install [Python 3.9.0](https://www.python.org/downloads/release/python-390/).
+* Install required Python 3.9.0 dependencies using command:
 `pip3 install -r requirements.txt`
 * Download and install [Frida Server](https://play.google.com/store/apps/details?id=me.shingle.fridaserver) application from Google Play store and start the server.
 * Enable USB debugging on your Android device and connect it to your computer.
-* Execute the script:
+* Execute the script using command:
 `python3 dump_keys.py`
 
 After successful run you will have a new folder `key_dumps` with needed keys inside.
