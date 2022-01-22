@@ -29,7 +29,10 @@ class Scan:
             'libWVStreamControlAPI_L1.so',
             'libdrmwvmplugin.so',
             'libwvm.so',
-            'libwidevinecdm.so'
+            'libwidevinecdm.so',
+            'libDivxDrm.so',
+            'libdrmdecrypt.so',
+            'libdrmfs.so'
         ]
 
     def export_key(self, k):
