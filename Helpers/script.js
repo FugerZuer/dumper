@@ -1,4 +1,4 @@
-const KNOWN_DYNAMIC_FUNC = ['ulns', 'cwkfcplc', 'dnvffnze', 'kgaitijd', 'polorucp'];
+const KNOWN_DYNAMIC_FUNC = ['ulns', 'cwkfcplc', 'dnvffnze', 'kgaitijd', 'polorucp', 'dmwdqnvg'];
 
 function TextEncoder() {
 }
