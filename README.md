@@ -18,6 +18,10 @@ Does not work on Android 11+. On other Android versions you need to check your d
 
 After successful run you will have a new folder `key_dumps` with needed keys inside.
 
+## Only getting key_boxes?
+
+Contact me, private key dump is possible.
+
 ## Credits
 
 Thanks to the original author of the code.
