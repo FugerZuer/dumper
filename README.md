@@ -20,7 +20,7 @@ After successful run you will have a new folder `key_dumps` with needed keys ins
 
 ## Only getting key_boxes?
 
-Private key dump is possible, you need to modify `script.js` to include the `KNOWN_DYNAMIC_FUNC` for your phone.
+Private key dump is possible, you need to modify `script.js` to include the `KNOWN_DYNAMIC_FUNC` for your Android device.
 
 ## Credits
 
